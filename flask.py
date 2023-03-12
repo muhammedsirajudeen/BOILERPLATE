@@ -26,7 +26,7 @@ class Hello(Resource):
           
         data = request.get_json()
         print(data)     # status code
-        return {'data': "data"}
+        return {'data': "data"} #the error was in this line the app trying to jsonify the response
   
   
 # another resource to calculate the square of a number
